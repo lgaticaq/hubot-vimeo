@@ -1,0 +1,37 @@
+{
+  "name": "hubot-vimeo",
+  "version": "1.0.0",
+  "description": "A hubot script for searching Vimeo",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lgaticaq/hubot-vimeo.git"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "vimeo"
+  ],
+  "author": "Leonardo Gatica <lgatica@protonmail.com> (https://about.me/lgatica)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgaticaq/hubot-vimeo/issues"
+  },
+  "homepage": "https://github.com/lgaticaq/hubot-vimeo#readme",
+  "dependencies": {
+    "vimeo": "^1.1.4"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "coffee-script": "^1.10.0",
+    "hubot-test-helper": "^1.4.4",
+    "mocha": "^2.3.4",
+    "nock": "^5.2.1"
+  }
+}
