@@ -4,6 +4,10 @@
 # Dependencies:
 #   "vimeo": "^1.1.4"
 #
+# Configuration:
+#   VIMEO_CLIENT_ID, VIMEO_CLIENT_SECRET, VIMEO_ACCESS_TOKEN - Obtained from
+#     https://developer.vimeo.com
+#
 # Commands:
 #   hubot vimeo <query> -> <url vimeo>
 #
