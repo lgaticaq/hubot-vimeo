@@ -9,7 +9,7 @@
 #     https://developer.vimeo.com
 #
 # Commands:
-#   hubot vimeo <query> -> <url vimeo>
+#   hubot vimeo <query> -> Get a video url
 #
 # Author:
 #   lgaticaq
