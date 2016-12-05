@@ -1,7 +1,20 @@
 path = require("path")
 Helper = require("hubot-test-helper")
 expect = require("chai").expect
-nock = require("nock")
+proxyquire = require("proxyquire")
+
+class Vimeo
+  constructor: (@clientId, @clientSecret, @accessToken) ->
+  request: (options, cb) ->
+    if options.query.query is "asdasdasdasd12123"
+      cb(null, {data: []})
+    else if options.query.query is "error"
+      cb(new Error("Server error"))
+    else
+      cb(null, {data: [{link: "https://vimeo.com/50915437"}]})
+vimeo = {Vimeo: Vimeo}
+
+proxyquire("./../src/script.coffee", {"vimeo": vimeo})
 
 helper = new Helper("./../src/index.coffee")
 
@@ -11,60 +24,39 @@ describe "vimeo", ->
 
   beforeEach ->
     room = helper.createRoom()
-    nock.disableNetConnect()
 
   afterEach ->
     room.destroy()
-    nock.cleanAll()
 
   context "found data", ->
-    query = "breaking bad"
-    link = "https://vimeo.com/50915437"
-
     beforeEach (done) ->
-      nock("https://api.vimeo.com")
-        .get("/videos")
-        .query({page: 1, per_page: 1, query: query})
-        .reply(200, {data: [{link: link}]})
-      room.user.say("leon", "hubot vimeo #{query}")
+      room.user.say("user", "hubot vimeo breaking bad")
       setTimeout(done, 500)
 
     it "should return a link", ->
       expect(room.messages).to.eql([
-        ["leon", "hubot vimeo #{query}"],
-        ["hubot", link]
+        ["user", "hubot vimeo breaking bad"],
+        ["hubot", "https://vimeo.com/50915437"]
       ])
 
   context "not found", ->
-    query = "asdasdasdasd12123"
-
     beforeEach (done) ->
-      nock("https://api.vimeo.com")
-        .get("/videos")
-        .query({page: 1, per_page: 1, query: query})
-        .reply(200, {data: []})
-      room.user.say("leon", "hubot vimeo #{query}")
+      room.user.say("user", "hubot vimeo asdasdasdasd12123")
       setTimeout(done, 500)
 
     it "should return a null link", ->
       expect(room.messages).to.eql([
-        ["leon", "hubot vimeo #{query}"],
-        ["hubot", "@leon no results for #{query}"]
+        ["user", "hubot vimeo asdasdasdasd12123"],
+        ["hubot", "@user no results for *asdasdasdasd12123*"]
       ])
 
   context "error", ->
-    query = "asdasdasdasd12123"
-
     beforeEach (done) ->
-      nock("https://api.vimeo.com")
-        .get("/videos")
-        .query({page: 1, per_page: 1, query: query})
-        .reply(500)
-      room.user.say("leon", "hubot vimeo #{query}")
+      room.user.say("user", "hubot vimeo error")
       setTimeout(done, 500)
 
     it "should return a null link", ->
       expect(room.messages).to.eql([
-        ["leon", "hubot vimeo #{query}"],
-        ["hubot", "@leon an error occurred when you query"]
+        ["user", "hubot vimeo error"],
+        ["hubot", "@user an error occurred. Error: Server error"]
       ])
