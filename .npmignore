@@ -7,4 +7,3 @@ test
 .nvmrc
 .travis.yml
 CHANGELOG.md
-yarn.lock
