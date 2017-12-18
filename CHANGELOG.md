@@ -1,3 +1,42 @@
+## 2.0.0 (2017-12-18)
+
+##### Chores
+
+* **deps:**
+  *  update dependency coffee-script to v1.12.8 ([9150e54e](https://github.com/lgaticaq/hubot-vimeo/commit/9150e54e2563f2d9f9c0d33c95736b6bd8b62e41))
+  *  update dependency generate-changelog to v1.6.0 ([1a029035](https://github.com/lgaticaq/hubot-vimeo/commit/1a02903576c97a271a4cae53d1481c334e70f118))
+  *  update dependency coffeelint to v2.0.7 ([d9a4fab6](https://github.com/lgaticaq/hubot-vimeo/commit/d9a4fab6600b2513d0c3e6b5377b105e0b8b41ca))
+  *  update dependency hubot-test-helper to v1.8.1 ([b3199750](https://github.com/lgaticaq/hubot-vimeo/commit/b3199750a72a9323068b33efe96e65af52a2f63d))
+  *  update dependency hubot-test-helper to v1.8.0 ([95c2a7a9](https://github.com/lgaticaq/hubot-vimeo/commit/95c2a7a9da01c22871a445cb7247b9aebeacb316))
+  *  update dependency mocha to v4.0.1 ([a85a84f0](https://github.com/lgaticaq/hubot-vimeo/commit/a85a84f0a126534d492b74d1524f2448e55570b5))
+  *  update dependency coffeelint to v2.0.6 ([2e289653](https://github.com/lgaticaq/hubot-vimeo/commit/2e2896533bbc059b57605c08ae87338664e8cc1e))
+  *  update dependency coffeelint to v2.0.5 ([7c1a8fd8](https://github.com/lgaticaq/hubot-vimeo/commit/7c1a8fd83b8f879801e266426533e92cb9511c48))
+  *  update dependency coffeelint to v2.0.3 ([283f612e](https://github.com/lgaticaq/hubot-vimeo/commit/283f612ece069570598cd939ed94a40ff59243fa))
+  *  update dependency mocha to v4.0.0 ([68dc3b1c](https://github.com/lgaticaq/hubot-vimeo/commit/68dc3b1c4989cdd3d3f14ea2342b2d3a58affb38))
+  *  update dependency coveralls to v3.0.0 ([b64e02ab](https://github.com/lgaticaq/hubot-vimeo/commit/b64e02ab8c6d0de9c5b93d844cb44f41b1ea24a2))
+  *  update dependency generate-changelog to v1.5.0 ([080585f3](https://github.com/lgaticaq/hubot-vimeo/commit/080585f3479e93681c9c545399efcafd38507643))
+  *  update dependency mocha to v3.5.3 ([d68ce736](https://github.com/lgaticaq/hubot-vimeo/commit/d68ce736e9e7abfbf65eba3d539b476f4602a71c))
+  *  update dependency mocha to v3.5.2 ([2483fff2](https://github.com/lgaticaq/hubot-vimeo/commit/2483fff2f53abeb74825b7122b847154c18da723))
+  *  update dependency codeclimate-test-reporter to v0.5.0 ([003814ae](https://github.com/lgaticaq/hubot-vimeo/commit/003814aed67522ebd172f02316d7b310bb265836))
+* **package:**
+  *  update mocha to version 3.5.3 ([4a13e199](https://github.com/lgaticaq/hubot-vimeo/commit/4a13e19971e0c365e0506a5366e6b21aac09a44e))
+  *  update chai to version 4.0.0 ([9e20d938](https://github.com/lgaticaq/hubot-vimeo/commit/9e20d9380f60976b1802346fbcbfee4d05b3790d))
+  *  update coffee-coverage to version 2.0.0 ([62f52cd5](https://github.com/lgaticaq/hubot-vimeo/commit/62f52cd5dedab8b5261884ac51f0246681ddfe42))
+
+##### New Features
+
+* **package:**  update min node version to v8 ([3bead157](https://github.com/lgaticaq/hubot-vimeo/commit/3bead15713361a504a9893fb106a329e1f60c9ae))
+
+##### Bug Fixes
+
+* **deps:**  update dependency coffee-script to v1.12.7 ([6c4df946](https://github.com/lgaticaq/hubot-vimeo/commit/6c4df946479de609e1dc2759fefc8c8f95bacc7b))
+
+##### Refactors
+
+* **deps:**
+  *  renovate pin dependencies packages ([c2d43bcd](https://github.com/lgaticaq/hubot-vimeo/commit/c2d43bcd7910d2300d2a18beefcc2f529c1932b0))
+  *  renovate pin dependencies packages ([9f29d44d](https://github.com/lgaticaq/hubot-vimeo/commit/9f29d44dbf190612440c0fc182efe8fefb353f14))
+
 #### 1.0.2 (2016-12-5)
 
 ##### Chores
