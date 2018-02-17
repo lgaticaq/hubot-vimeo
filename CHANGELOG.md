@@ -1,3 +1,21 @@
+#### 2.0.1 (2018-02-17)
+
+##### Chores
+
+* **deps:**
+  *  update dependency prettier-standard to v8.0.0 ([6e994951](https://github.com/lgaticaq/hubot-vimeo/commit/6e9949519ee4b3adc90a2b3298a9a282feea7c53))
+  *  update dependency eslint-plugin-node to v6.0.0 ([85292990](https://github.com/lgaticaq/hubot-vimeo/commit/85292990fe2e45aaf3501828af82bbac34d49f43))
+  *  update dependency lint-staged to v6.1.1 ([1fea033a](https://github.com/lgaticaq/hubot-vimeo/commit/1fea033a20187505d0bc32e50c5ba955ea0dbee9))
+  *  update dependency mocha to v5.0.1 ([bb1a066e](https://github.com/lgaticaq/hubot-vimeo/commit/bb1a066ef319851f3496b121859cf6e9bc1ea332))
+  *  update dependency lint-staged to v6.1.0 ([59c78fd3](https://github.com/lgaticaq/hubot-vimeo/commit/59c78fd385f60c314487eaa0a932e40e4e79547c))
+  *  update dependency mocha to v5.0.0 ([a339c15d](https://github.com/lgaticaq/hubot-vimeo/commit/a339c15d009fbe795e387ec6509f43c9bb29cbd3))
+  *  update dependency lint-staged to v6.0.1 ([4943dbbd](https://github.com/lgaticaq/hubot-vimeo/commit/4943dbbd4d69a6fcb89f0bd4539286ae86fa5c53))
+  *  update dependency mocha to v4.1.0 ([49d3660e](https://github.com/lgaticaq/hubot-vimeo/commit/49d3660e67ff7bd7d905ad2e8ad20474d87dfdb2))
+
+##### Bug Fixes
+
+* **deps:**  update dependency vimeo to v2.0.0 ([235e045b](https://github.com/lgaticaq/hubot-vimeo/commit/235e045b2272d77be65c44cc312a8315487636cd))
+
 ## 2.0.0 (2017-12-18)
 
 ##### Chores
