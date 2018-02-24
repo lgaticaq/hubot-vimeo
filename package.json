@@ -37,6 +37,7 @@
   "devDependencies": {
     "chai": "4.1.2",
     "coffee-script": "1.12.7",
+    "eslint": "4.18.1",
     "eslint-config-standard": "11.0.0",
     "eslint-plugin-import": "2.9.0",
     "eslint-plugin-node": "6.0.1",
@@ -53,9 +54,6 @@
   },
   "eslintConfig": {
     "extends": "standard",
-    "env": {
-      "mocha": true
-    },
     "rules": {
       "no-console": [
         "error"

@@ -1,5 +1,6 @@
 'use strict'
 
+const { describe, it, beforeEach, afterEach } = require('mocha')
 const Helper = require('hubot-test-helper')
 const { expect } = require('chai')
 const proxyquire = require('proxyquire')
@@ -33,7 +34,7 @@ describe('vimeo', () => {
 
   afterEach(() => this.room.destroy())
 
-  context('found data', () => {
+  describe('found data', () => {
     beforeEach(done => {
       this.room.user.say('user', 'hubot vimeo breaking bad')
       setTimeout(done, 500)
@@ -46,7 +47,7 @@ describe('vimeo', () => {
       ]))
   })
 
-  context('not found', () => {
+  describe('not found', () => {
     beforeEach(done => {
       this.room.user.say('user', 'hubot vimeo asdasdasdasd12123')
       setTimeout(done, 500)
@@ -59,7 +60,7 @@ describe('vimeo', () => {
       ]))
   })
 
-  context('error', () => {
+  describe('error', () => {
     beforeEach(done => {
       this.room.user.say('user', 'hubot vimeo error')
       setTimeout(done, 500)
