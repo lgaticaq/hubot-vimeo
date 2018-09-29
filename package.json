@@ -7,7 +7,7 @@
     "lint": "eslint . --fix",
     "format": "prettier-standard 'src/**/*.js' 'test/**/*.js'",
     "commit": "commit",
-    "test": "mocha"
+    "test": "nyc mocha"
   },
   "engines": {
     "node": ">=8"
@@ -45,6 +45,8 @@
     "husky": "1.0.1",
     "lint-staged": "7.3.0",
     "mocha": "5.2.0",
+    "nyc": "13.0.1",
+    "nyc-config-common": "1.0.0",
     "prettier-standard": "8.0.1",
     "proxyquire": "2.1.0"
   },
@@ -83,6 +85,9 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "nyc": {
+    "extends": "nyc-config-common"
   },
   "renovate": {
     "automerge": "minor",
