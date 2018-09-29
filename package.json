@@ -7,7 +7,6 @@
     "lint": "eslint . --fix",
     "format": "prettier-standard 'src/**/*.js' 'test/**/*.js'",
     "precommit": "lint-staged",
-    "pretest": "npm run lint -s && npm run format -s",
     "test": "istanbul cover _mocha"
   },
   "engines": {
