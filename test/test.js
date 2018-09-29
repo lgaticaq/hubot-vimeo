@@ -3,7 +3,7 @@
 const { describe, it, beforeEach, afterEach } = require('mocha')
 const Helper = require('hubot-test-helper')
 const { expect } = require('chai')
-const proxyquire = require('proxyquire')
+const mock = require('mock-require')
 
 class Vimeo {
   constructor (clientId, clientSecret, accessToken) {
@@ -23,7 +23,7 @@ class Vimeo {
 }
 const vimeo = { Vimeo }
 
-proxyquire('./../src/script.js', { vimeo: vimeo })
+mock('vimeo', vimeo)
 
 const helper = new Helper('./../src/index.js')
 
