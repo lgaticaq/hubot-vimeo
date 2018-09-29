@@ -7,7 +7,7 @@
     "lint": "eslint . --fix",
     "format": "prettier-standard 'src/**/*.js' 'test/**/*.js'",
     "precommit": "lint-staged",
-    "test": "istanbul cover _mocha"
+    "test": "mocha"
   },
   "engines": {
     "node": ">=8"
@@ -41,7 +41,6 @@
     "eslint-plugin-standard": "4.0.0",
     "hubot-test-helper": "1.9.0",
     "husky": "1.0.1",
-    "istanbul": "0.4.5",
     "lint-staged": "7.3.0",
     "mocha": "5.2.0",
     "prettier-standard": "8.0.1",
