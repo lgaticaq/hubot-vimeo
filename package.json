@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/lgaticaq/hubot-vimeo#readme",
   "dependencies": {
-    "vimeo": "2.1.0"
+    "vimeo": "^2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.1.2",
