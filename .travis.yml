@@ -3,7 +3,6 @@ cache:
   directories:
     - ~/.npm
     - .nyc_output
-    - node_modules
 node_js:
   - "10"
 notifications:
