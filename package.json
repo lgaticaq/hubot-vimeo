@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint . --fix",
     "format": "prettier-standard 'src/**/*.js' 'test/**/*.js'",
+    "commit": "commit",
     "test": "mocha"
   },
   "engines": {
@@ -30,6 +31,9 @@
     "vimeo": "2.1.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "7.1.2",
+    "@commitlint/config-conventional": "7.1.2",
+    "@commitlint/prompt-cli": "7.1.2",
     "chai": "4.2.0",
     "eslint": "5.6.1",
     "eslint-config-standard": "12.0.0",
@@ -57,7 +61,8 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -73,6 +78,11 @@
         "git add"
       ]
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "renovate": {
     "automerge": "minor",
