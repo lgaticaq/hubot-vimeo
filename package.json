@@ -1,6 +1,6 @@
 {
   "name": "hubot-vimeo",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A hubot script for searching Vimeo",
   "main": "src",
   "scripts": {

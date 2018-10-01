@@ -1,3 +1,14 @@
+## [2.0.2](https://github.com/lgaticaq/hubot-vimeo/compare/v2.0.1...v2.0.2) (2018-10-01)
+
+
+### Bug Fixes
+
+* **deps:** fix vulnerabilities ([893b711](https://github.com/lgaticaq/hubot-vimeo/commit/893b711))
+* **deps:** update dependency vimeo to v2.0.1 ([24ba02b](https://github.com/lgaticaq/hubot-vimeo/commit/24ba02b))
+* **deps:** update dependency vimeo to v2.0.2 ([b1267d0](https://github.com/lgaticaq/hubot-vimeo/commit/b1267d0))
+* **deps:** update dependency vimeo to v2.1.0 ([4ae3fd9](https://github.com/lgaticaq/hubot-vimeo/commit/4ae3fd9))
+* **package:** add eslint ([6653a50](https://github.com/lgaticaq/hubot-vimeo/commit/6653a50))
+
 #### 2.0.1 (2018-02-17)
 
 ##### Chores
