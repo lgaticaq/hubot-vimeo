@@ -46,7 +46,7 @@
     "eslint-plugin-standard": "4.0.0",
     "hubot-test-helper": "1.9.0",
     "husky": "1.2.0",
-    "lint-staged": "7.3.0",
+    "lint-staged": "8.1.0",
     "mocha": "5.2.0",
     "mock-require": "3.0.2",
     "npm-github-config": "2.0.0",
