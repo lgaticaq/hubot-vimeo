@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/lgaticaq/hubot-vimeo/compare/v2.0.2...v2.0.3) (2019-04-02)
+
+
+### Bug Fixes
+
+* package.json to reduce vulnerabilities ([951dbfa](https://github.com/lgaticaq/hubot-vimeo/commit/951dbfa))
+
 ## [2.0.2](https://github.com/lgaticaq/hubot-vimeo/compare/v2.0.1...v2.0.2) (2018-10-01)
 
 
