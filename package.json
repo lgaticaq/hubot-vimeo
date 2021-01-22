@@ -45,7 +45,7 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.1.0",
     "hubot-test-helper": "1.9.0",
-    "husky": "3.1.0",
+    "husky": "4.3.8",
     "lint-staged": "9.5.0",
     "mocha": "6.2.3",
     "mock-require": "3.0.3",
