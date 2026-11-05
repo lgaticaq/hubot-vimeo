@@ -31,9 +31,9 @@
     "vimeo": "^2.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
-    "@commitlint/prompt-cli": "8.3.5",
+    "@commitlint/cli": "8.3.6",
+    "@commitlint/config-conventional": "8.3.6",
+    "@commitlint/prompt-cli": "8.3.6",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
     "@semantic-release/npm": "5.3.5",
